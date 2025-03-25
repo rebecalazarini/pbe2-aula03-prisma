@@ -19,6 +19,7 @@ npm install
 - 3 Crie o arquivo .env na pasta pai contendo a variavel de ambiente de conexão
 ```js
 DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
+PORT=5000
 ```
 - 4 Abra o XAMPP Control Panel e de start no MySql
 - 5 No terminal instale o prisma globalmente e execute o comando de migração
@@ -62,6 +63,7 @@ npx prisma init --datasource-provider mysql
 - Editar a variável de ambiente DATABASE_URL no arquivo .env
 ```bash
 DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
+PORT=5000
 ```
 
 Navegar até o arquivo ./prisma/schema.prisma
