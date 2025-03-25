@@ -17,4 +17,11 @@ npm init -y
 npm i express cors dotenv
 ```
 
-- Iniciar o uso do Prisma
+- Iniciar o uso do Prisma instalaremos ele globalmente
+```bash
+npm i prisma -g
+```
+- Conectar o prisma ao um SGBD (Sistema Gerenciador de Banco de Dados)
+```bash
+npx prisma init --datasource-provider mysql
+```
