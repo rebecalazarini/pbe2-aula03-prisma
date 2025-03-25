@@ -1,5 +1,39 @@
 # Aula 03 - ORM PRISMA
 
+# Smoppy Pet Shop
+Projeto de estudos do ORM Prisma com MySql no Node.js
+
+##Tecnologias
+- Node.Js
+- VsCode
+- XAMPP
+- Insomnia
+
+##Como testar
+- 1 Clone este repositório
+- 2 Abra com VsCode, abra um terminal CTRL + ' navegue até a pasta ./api e execute os seguintes comandos
+```bash
+cd api
+npm install
+```
+- 3 Crie o arquivo .env na pasta pai contendo a variavel de ambiente de conexão
+```js
+DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
+```
+- 4 Abra o XAMPP Control Panel e de start no MySql
+- 5 No terminal instale o prisma globalmente e execute o comando de migração
+```bash
+npm i prisma -g
+npx prisma migrate dev --name init
+```
+- 6 Execute a API e faça os testes com o Insomnia
+```bash
+npm start
+# ou
+npx nodemon
+```
+
+
 ## Demonstração
 Projeto modelo com prisma Snoopy Pet shop 
 
@@ -72,3 +106,15 @@ model Pedido{
 ```bash
 npx prisma migrate dev --name init
 ```
+- Caso seja necessário remover o banco de dados para testar a criação novamente
+  - Exclua a pasta migrations
+prisma migrate reset
+- Editar o .gitignore
+```bash
+node_modules
+# Keep environment variables out of version control
+.env
+prisma/migrations
+package-lock.json
+```
+
