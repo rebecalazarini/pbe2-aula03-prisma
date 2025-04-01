@@ -3,13 +3,13 @@
 # Smoppy Pet Shop
 Projeto de estudos do ORM Prisma com MySql no Node.js
 
-##Tecnologias
+## Tecnologias
 - Node.Js
 - VsCode
 - XAMPP
 - Insomnia
 
-##Como testar
+## Como testar
 - 1 Clone este repositório
 - 2 Abra com VsCode, abra um terminal CTRL + ' navegue até a pasta ./api e execute os seguintes comandos
 ```bash
